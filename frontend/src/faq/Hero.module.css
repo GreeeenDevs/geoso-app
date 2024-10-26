@@ -1,0 +1,49 @@
+.hero {
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    overflow: hidden;
+    color: #000;
+    letter-spacing: -0.72px;
+    font: 400 18px Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .hero {
+      max-width: 100%;
+      font-size: 40px;
+    }
+  }
+  
+  .heroContent {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 500px;
+    /* width: 100%; */
+    /* padding: 279px 70px 213px; */
+  }
+  
+  @media (max-width: 991px) {
+    .heroContent {
+      max-width: 100%;
+      font-size: 40px;
+      padding: 100px 20px 110px;
+    }
+  }
+  
+  .heroImage {
+    position: absolute;
+    inset: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .heroTitle {
+    position: relative;
+    margin-left: 100px;
+    margin-top: 200px;
+  }
