@@ -1,5 +1,5 @@
 import * as React from "react";
-import InputField from "./InputFild";
+import InputField from "./InputField";
 import { formFields } from "./formData";
 
 function RegistrationForm() {

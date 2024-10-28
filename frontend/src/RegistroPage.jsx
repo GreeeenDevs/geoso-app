@@ -1,10 +1,10 @@
 import * as React from "react";
-import { RegistrationForm } from "./Registro/RegistrationForm";
+import RegistrationForm from "./Registro/RegistrationForm";
 import AltoContraste from "./AltoContraste/AltoContraste";
 import DarkMode from "./darkmode/Darkmode";
 import Hero from "./faq/Hero";
 
-export function RegistrationForm() {
+export function RegistroPage() {
   return (
     <>
       <div className="login-container">

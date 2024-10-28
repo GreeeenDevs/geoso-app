@@ -1,9 +1,9 @@
 import * as React from "react";
 import { LoginForm } from "./Login/LoginForm";
-import { SocialFooter } from "./SocialFooter";
 import AltoContraste from "./AltoContraste/AltoContraste";
 import DarkMode from "./darkmode/Darkmode";
 import Hero from "./faq/Hero";
+import Footer from "./footer/Footer";
 
 export function LoginPage() {
   return (
@@ -11,7 +11,7 @@ export function LoginPage() {
       <div className="login-container">
         <Hero />
         <LoginForm />
-        <SocialFooter />
+        <Footer />
         <AltoContraste />
         <DarkMode />
       </div>
