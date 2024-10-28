@@ -11,7 +11,6 @@ export function LoginPage() {
       <div className="login-container">
         <Hero />
         <LoginForm />
-        <Footer />
         <AltoContraste />
         <DarkMode />
       </div>

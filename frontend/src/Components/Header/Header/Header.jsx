@@ -21,7 +21,7 @@ function Header() {
         ))}
       </nav>
       <div className={styles.buttonGroup}>
-        <Button variant="outlined" text="Área do Cliente" />
+        <a href="/login"><Button variant="outlined" text="Área do Cliente"/></a>
         <Button variant="filled" text="Entre em contato" />
       </div>
     </header>

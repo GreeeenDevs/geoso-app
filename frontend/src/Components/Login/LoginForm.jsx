@@ -23,7 +23,7 @@ export function LoginForm() {
           
           <div className="signup-prompt">
             <span>Ainda não é cadastrado?</span>
-            <a href="#signup">Clique aqui!</a>
+            <a href="/registro">Clique aqui!</a>
           </div>
         </form>
       </main>
