@@ -1,24 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './header/Header';
-import Footer from './footer/Footer';
-import Home from './HomePage';
-import Services from './ServicesPage';
-import SearchServices from './SearchPage';
-import FAQ from './QuestionsPage';
-import About from './AboutPage';
-import { RegistroPage } from'./RegistroPage';
-import { LoginPage } from './LoginPage';
+import Header from './components/Header/Header/Header';
+import Footer from './components/Footer/Footer/Footer';
+import { RegistroPage } from'./Pages/RegistroPage';
+import { LoginPage } from './Pages/LoginPage';
+import SearchPage from './Pages/SearchPage';
+import AboutPage from './Pages/AboutPage';
+import QuestionPage from './Pages/QuestionsPage';
+import ServicesPage from './Pages/ServicesPage';
+import HomePage from './Pages/HomePage';
+
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/servicos" element={<Services />} />
-        <Route path="/pesquisa" element={<SearchServices />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/sobre" element={<About />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/servicos" element={<ServicesPage />} />
+        <Route path="/pesquisa" element={<SearchPage />} />
+        <Route path="/faq" element={<QuestionPage />} />
+        <Route path="/sobre" element={<AboutPage />} />
         <Route path="/login" element={<LoginPage />}/>
         <Route path="/registro" element={<RegistroPage/>}/>
       </Routes>
