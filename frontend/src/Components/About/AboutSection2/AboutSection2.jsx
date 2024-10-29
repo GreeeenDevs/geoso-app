@@ -16,9 +16,10 @@ function AboutSection2() {
       <div className={styles.container}>
         <div className={styles.textColumn}>
           <div className={styles.textContent}>
-            <h2 className={styles.title}>Sed ut perspiciatis unde omnis</h2>
+            <h2 className={styles.title}>Nosso Compromisso
+            </h2>
             <p className={styles.description}>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem.
+            Além dos serviços de consultoria, nosso compromisso com a transparência e responsabilidade social é refletido em nossa plataforma pública. Disponibilizamos informações detalhadas sobre as áreas de limpeza urbana para todos, permitindo que a população acesse dados em tempo real sobre os pontos de coleta e limpeza. Com isso, buscamos criar um espaço mais consciente, promovendo a colaboração entre cidadãos, empresas e gestores públicos para um futuro urbano mais limpo.
             </p>
           </div>
         </div>

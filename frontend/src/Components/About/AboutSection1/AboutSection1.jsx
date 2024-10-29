@@ -24,11 +24,11 @@ function AboutSection1() {
         </div>
         <div className={styles.textContent}>
           <div className={styles.textWrapper}>
-            <h2 className={styles.title}>Sed ut perspiciatis unde omnis</h2>
+            <h2 className={styles.title}>Sobre Nós</h2>
             <p className={styles.description}>
-              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, 
-              sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
-              Neque porro quisquam est, qui dolorem.
+            Na GeoSO Soluções Ambientais, somos especialistas em consultoria de serviços de limpeza urbana, oferecendo soluções completas para empresas e órgãos públicos. Nossa equipe desenvolve e gerencia roteiros de limpeza personalizados, otimizando recursos e garantindo eficiência nas operações. Trabalhamos lado a lado com nossos clientes para criar um ambiente mais limpo e sustentável, focando em estratégias que maximizem os resultados e reduzam os impactos ambientais.
+
+
             </p>
           </div>
         </div>
