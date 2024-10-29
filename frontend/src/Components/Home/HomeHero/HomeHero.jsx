@@ -1,9 +1,18 @@
 import React from 'react';
 import styles from './HomeHero.module.css';
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 
 function HomeHero() {
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
   return (
-    <section className={styles.hero}>
+    <section style={sectionStyle} className={styles.hero}>
       <div className={styles.heroContent}>
         <img 
           loading="lazy" 
@@ -11,13 +20,9 @@ function HomeHero() {
           className={styles.heroImage} 
           alt="Urban cleaning background" 
         />
-        <div className={styles.textContainer}>
-          <h1 className={styles.heroTitle}>
-            Geo-SO, especialista em limpeza urbana
-          </h1>
-          <button className={styles.ctaButton}>
-            Saiba Mais!
-          </button>
+        <div className={`${styles.textContainer} ${ highContrast ? styles.highContrastTextContainer : ''}`}>
+          <h1 className={styles.heroTitle}>Geo-SO, especialista em limpeza urbana</h1>
+          <button className={styles.ctaButton}>Saiba Mais!</button>
         </div>
       </div>
     </section>

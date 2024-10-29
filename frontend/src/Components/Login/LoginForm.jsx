@@ -1,20 +1,44 @@
 import * as React from "react";
+import { useTheme } from '../Acessibility/AltoContraste/ThemeContext';
 
 export function LoginForm() {
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    borderColor: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
+  const inputStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    borderColor: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
+  // Estilo para o placeholder
+  const placeholderStyle = `
+    ::placeholder {
+      color: ${highContrast ? 'lightgray' : 'gray'};
+    }
+  `;
+
   return (
     <>
-      <main className="login-section">
-        <form className="login-form">
+      <main style={sectionStyle} className="login-section">
+        <form style={sectionStyle} className="login-form">
           <h1 className="form-title">Acesse sua conta</h1>
           
           <div className="form-group">
             <label htmlFor="email" className="visually-hidden">Email</label>
-            <input type="email" id="email" className="form-input" placeholder="Email" required />
+            <input type="email" id="email" style={inputStyle} className="form-input" placeholder="Email" required />
           </div>
           
           <div className="form-group">
             <label htmlFor="password" className="visually-hidden">Senha</label>
-            <input type="password" id="password" className="form-input" placeholder="Senha" required />
+            <input type="password" id="password" style={inputStyle} className="form-input" placeholder="Senha" required />
           </div>
           
           <button type="submit" className="submit-btn">Entrar</button>
@@ -31,7 +55,6 @@ export function LoginForm() {
         .login-section {
           background-color: #fff;
           display: flex;
-          width: 100%;
           justify-content: center;
           padding: 191px 80px;
         }
@@ -45,7 +68,6 @@ export function LoginForm() {
           border: 1px solid rgba(0, 0, 0, 0.5);
         }
         .form-title {
-          color: #000;
           font-size: 24px;
           font-weight: 700;
           letter-spacing: -0.36px;
@@ -74,7 +96,6 @@ export function LoginForm() {
         .recover-link {
           text-align: center;
           margin: 24px 0;
-          color: rgba(0, 0, 0, 0.8);
           text-decoration: none;
         }
         .signup-prompt {

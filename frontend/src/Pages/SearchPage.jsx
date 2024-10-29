@@ -1,13 +1,15 @@
 import React from 'react';
 import SearchSection from '../Components/Search/SearchSection';
-import DarkMode from '../Components/Acessibility/DarkMode/Darkmode';
+import AltoContraste from '../Components/Acessibility/AltoContraste/AltoContraste';
+// import DarkMode from '../Components/Acessibility/DarkMode/Darkmode';
 
 function SearchPage() {
   return (
     <div className="flex flex-col">
       <main>
         <SearchSection />
-        <DarkMode />
+        <AltoContraste />
+        {/* <DarkMode /> */}
       </main>
     </div>
   );

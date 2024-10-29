@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../ServicesSection/ServicesSection.module.css';
 import ServiceList from '../ServiceList/ServiceList';
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 
 const ServicesSection = () => {
   const leftColumnServices = [
@@ -23,8 +24,17 @@ const ServicesSection = () => {
     'Limpeza de áreas externas e internas de assentamentos urbanos informais'
   ];
 
+  const { highContrast } = useTheme();
+
+  // Estilos para o tema com alto contraste
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : '#232323',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  }
+
   return (
-    <section className={styles.section}>
+    <section style={sectionStyle} className={styles.section}>
       <h2 className={styles.title}>SERVIÇOS REALIZADOS</h2>
       <div className={styles.container}>
         <div className={styles.columnWrapper}>

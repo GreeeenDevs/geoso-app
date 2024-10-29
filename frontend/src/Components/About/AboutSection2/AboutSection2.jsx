@@ -1,9 +1,18 @@
 import React from "react";
 import styles from './AboutSection2.module.css';
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 
 function AboutSection2() {
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
   return (
-    <section className={styles.about}>
+    <section style={sectionStyle} className={styles.about}>
       <div className={styles.container}>
         <div className={styles.textColumn}>
           <div className={styles.textContent}>
