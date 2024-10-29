@@ -22,7 +22,7 @@ function HomeHero() {
         />
         <div className={`${styles.textContainer} ${ highContrast ? styles.highContrastTextContainer : ''}`}>
           <h1 className={styles.heroTitle}>Geo-SO, especialista em limpeza urbana</h1>
-          <button className={styles.ctaButton}>Saiba Mais!</button>
+          <a href="/sobre"><button className={styles.ctaButton}>Saiba Mais!</button></a>
         </div>
       </div>
     </section>
