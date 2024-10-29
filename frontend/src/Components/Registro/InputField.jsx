@@ -1,6 +1,23 @@
 import * as React from "react";
+import { useTheme } from '../Acessibility/AltoContraste/ThemeContext';
 
 function InputField({ label, type, id }) {
+  const { highContrast } = useTheme();
+
+  const inputStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    borderColor: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
+  // Estilo para o placeholder
+  const placeholderStyle = `
+    ::placeholder {
+      color: ${highContrast ? 'lightgray' : 'gray'};
+    }
+  `;
+
   return (
     <div className="input-wrapper">
       <label htmlFor={id} className="visually-hidden">{label}</label>
@@ -8,10 +25,11 @@ function InputField({ label, type, id }) {
         type={type}
         id={id}
         className="input-field"
+        style={inputStyle}
         placeholder={label}
         aria-label={label}
       />
-      
+
       <style jsx>{`
         .input-wrapper {
           display: flex;
@@ -44,6 +62,8 @@ function InputField({ label, type, id }) {
           }
         }
       `}</style>
+
+      <style>{placeholderStyle}</style>
     </div>
   );
 }

@@ -1,11 +1,21 @@
 import * as React from "react";
 import InputField from "./InputField";
 import { formFields } from "./FormData";
+import { useTheme } from '../Acessibility/AltoContraste/ThemeContext';
 
 function RegistrationForm() {
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    borderColor: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
   return (
-    <form className="registration-container">
-      <section className="registration-form">
+    <form style={sectionStyle} className="registration-container">
+      <section style={sectionStyle} className="registration-form">
         <h1 className="form-title">Informe seus dados</h1>
         
         <div className="name-fields">
@@ -35,25 +45,24 @@ function RegistrationForm() {
 
       <style jsx>{`
         .registration-container {
+          background-color: #fff;
           display: flex;
-          max-width: 622px;
           flex-direction: column;
           color: rgba(0, 0, 0, 0.8);
           letter-spacing: -0.22px;
           font: 400 15px Montserrat, -apple-system, Roboto, Helvetica, sans-serif;
+          padding: 150px 30px
         }
 
         .registration-form {
           background-color: #fff;
           display: flex;
-          width: 100%;
           flex-direction: column;
           padding: 64px;
           border: 1px solid rgba(0, 0, 0, 0.5);
         }
 
         .form-title {
-          color: #000;
           font-size: 24px;
           font-weight: 700;
           letter-spacing: -0.36px;
