@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.css';
 import ContactItem from '../ContactItem/ContactItem';
 import SocialIcon from '../SocialIcon/socialIcon';
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 
 const Footer = () => {
   const socialIcons = [
@@ -10,8 +11,16 @@ const Footer = () => {
     'https://cdn.builder.io/api/v1/image/assets/TEMP/2e1f3a42bf747c388cc061331b9ce9a9125b1c7267a873c118538bd9b71b4038?placeholderIfAbsent=true&apiKey=d7514896dbad40828bdeb0585d8c7a9d'
   ];
 
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? '#00633f' : '#00d084',
+    color: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
   return (
-    <footer className={styles.footer}>
+    <footer style={sectionStyle} className={styles.footer}>
       <div className={styles.copyright}>
         © 2024 Geo-SO. Todos os direitos reservados.
         <br />

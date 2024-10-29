@@ -1,7 +1,7 @@
 .footer {
   background-color: rgba(0, 208, 132, 1);
   display: flex;
-  max-width: 1680px;
+  /* max-width: 1680px; essa linha limitava o tamanho do footer, n sei pq tava aqui*/
   gap: 20px;
   flex-wrap: wrap;
   justify-content: space-between;

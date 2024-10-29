@@ -1,7 +1,7 @@
 .section {
     background-color: #fff;
     display: flex;
-    width: 100%; 
+    /* width: 100%; Isso limitava de forma estranha a section de serviços */
     flex-direction: column;
     overflow: hidden;
     align-items: start;
@@ -62,7 +62,7 @@
   }
   
   .serviceList {
-    color: #232323;
+    /* color: #232323; */
     align-self: stretch;
     margin: auto 0;
     font: 500 16px/33px Inter, -apple-system, Roboto, Helvetica, sans-serif;

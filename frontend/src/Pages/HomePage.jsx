@@ -2,8 +2,8 @@ import React from 'react';
 import Hero from '../Components/Home/HomeHero/HomeHero';
 import ServiceSection from '../Components/Home/ServiceSection/ServiceSection';
 import SearchSection from '../Components/Home/SearchSection/SearchSection';
-import DarkMode from '../Components/Acessibility/DarkMode/Darkmode';
 import AltoContraste from '../Components/Acessibility/AltoContraste/AltoContraste';
+// import DarkMode from '../Components/Acessibility/DarkMode/Darkmode';
 
 function HomePage() {
   return (
@@ -13,7 +13,7 @@ function HomePage() {
         <ServiceSection />
         <SearchSection />
         <AltoContraste />
-        <DarkMode />
+        {/* <DarkMode /> */}
       </main>
     </div>
   );

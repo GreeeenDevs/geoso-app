@@ -1,9 +1,18 @@
 import React from "react";
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 import styles from './SearchServices.module.css';
 
 function SearchServices() {
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
   return (
-    <section className={styles.container}>
+    <section style={sectionStyle} className={styles.container}>
       <div className={styles.content}>
         <div className={styles.textColumn}>
           <div className={styles.textContent}>

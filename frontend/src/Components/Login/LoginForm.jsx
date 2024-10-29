@@ -31,7 +31,7 @@ export function LoginForm() {
         .login-section {
           background-color: #fff;
           display: flex;
-          width: 100%;
+          // width: 100%;
           justify-content: center;
           padding: 191px 80px;
         }

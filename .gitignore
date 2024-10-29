@@ -54,3 +54,6 @@ backend/build/
 
 # VS Code
 backend/.vscode/
+
+#node_modules
+node_modules

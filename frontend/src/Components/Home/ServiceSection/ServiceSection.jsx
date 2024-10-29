@@ -1,5 +1,6 @@
 import React from 'react';
 import ServiceCard from '../ServiceCard/ServiceCard';
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 import styles from './ServicesSection.module.css';
 
 const services = [
@@ -26,10 +27,19 @@ const services = [
 ];
 
 const ServicesSection = () => {
+  const { highContrast } = useTheme();
+
+  // Estilos para o tema com alto contraste
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  }
+
   return (
-    <section className={styles.servicesSection}>
+    <section style={sectionStyle} className={styles.servicesSection}>
       <div className={styles.servicesContainer}>
-        <div className={styles.servicesGrid}>
+        <div style={sectionStyle} className={styles.servicesGrid}>
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}

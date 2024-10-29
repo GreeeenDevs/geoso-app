@@ -1,9 +1,18 @@
 import React from "react";
+import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 import styles from './FAQHero.module.css';
 
 function FAQHero() {
+  const { highContrast } = useTheme();
+
+  const sectionStyle = {
+    backgroundColor: highContrast ? 'black' : 'white',
+    color: highContrast ? 'white' : 'black',
+    transition: 'background-color 0.5s ease, color 0.5s ease',
+  };
+
   return (
-    <section className={styles.hero}>
+    <section style={sectionStyle} className={styles.hero}>
       <div className={styles.heroContent}>
         <img 
           loading="lazy" 

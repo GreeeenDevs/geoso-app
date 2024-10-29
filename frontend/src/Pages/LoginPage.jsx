@@ -11,7 +11,7 @@ export function LoginPage() {
         <Hero />
         <LoginForm />
         <AltoContraste />
-        <DarkMode />
+        {/* <DarkMode /> */}
       </div>
       <style jsx>{`
         .login-container {
