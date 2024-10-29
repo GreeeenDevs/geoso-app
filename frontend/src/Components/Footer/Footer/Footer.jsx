@@ -24,7 +24,7 @@ const Footer = () => {
         />
         <div className={styles.socialIcons}>
           {socialIcons.map((icon, index) => (
-            <SocialIcon key={index} iconSrc={icon} />
+            <SocialIcon iconSrc={icon} />
           ))}
         </div>
       </div>
