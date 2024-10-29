@@ -18,7 +18,6 @@ function SearchServices() {
     transition: 'background-color 0.5s ease, color 0.5s ease',
   };
 
-  // Estilo para o placeholder
   const placeholderStyle = `
     ::placeholder {
       color: ${highContrast ? 'lightgray' : 'gray'};
