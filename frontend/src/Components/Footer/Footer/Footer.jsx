@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Footer.module.css';
 import ContactItem from '../ContactItem/ContactItem';
-import SocialIcon from '../SocialIcon/SocialIcon'
+import SocialIcon from '../SocialIcon/SocialIcon.jsx'
 
 const Footer = () => {
   const socialIcons = [
