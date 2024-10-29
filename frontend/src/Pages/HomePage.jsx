@@ -12,7 +12,6 @@ function HomePage() {
         <Hero />
         <ServiceSection />
         <SearchSection />
-        <AltoContraste />
         <DarkMode />
       </main>
     </div>

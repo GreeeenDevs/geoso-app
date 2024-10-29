@@ -8,7 +8,6 @@ export function LoginPage() {
     <>
       <div className="login-container">
         <LoginForm />
-        <AltoContraste />
         <DarkMode />
       </div>
       <style jsx>{`

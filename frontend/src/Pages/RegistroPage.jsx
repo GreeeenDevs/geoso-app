@@ -8,7 +8,6 @@ export function RegistroPage() {
     <>
       <div className="login-container">
         <RegistrationForm />
-        <AltoContraste />
         <DarkMode />
       </div>
       <style jsx>{`
