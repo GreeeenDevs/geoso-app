@@ -44,7 +44,7 @@ const ServicesSection = () => {
             <ServiceCard key={index} {...service} />
           ))}
         </div>
-        <button className={styles.ctaButton}>Conheça Nossos Serviços</button>
+        <a href="/pesquisa"><button className={styles.ctaButton}>Conheça Nossos Serviços</button></a>
       </div>
     </section>
   );
