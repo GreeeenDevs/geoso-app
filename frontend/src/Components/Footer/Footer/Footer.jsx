@@ -23,7 +23,7 @@ const Footer = () => {
           text="(11) 000-000-000"
         />
         <div className={styles.socialIcons}>
-          {socialIcons.map((icon, index) => (
+          {socialIcons.map((icon) => (
             <SocialIcon iconSrc={icon} />
           ))}
         </div>
