@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './HomeHero.module.css';
 import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 
-function HomeHero() {
+const HomeHero = () => {
   const { highContrast } = useTheme();
 
   const sectionStyle = {
@@ -20,13 +20,15 @@ function HomeHero() {
           className={styles.heroImage} 
           alt="Urban cleaning background" 
         />
-        <div className={`${styles.textContainer} ${ highContrast ? styles.highContrastTextContainer : ''}`}>
+        <div className={`${styles.textContainer} ${highContrast ? styles.highContrastTextContainer : ''}`}>
           <h1 className={styles.heroTitle}>Geo-SO, especialista em limpeza urbana</h1>
-          <a href="/sobre"><button className={styles.ctaButton}>Saiba Mais!</button></a>
+          <a href="/sobre">
+            <button className={styles.ctaButton}>Saiba Mais!</button>
+          </a>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default HomeHero;

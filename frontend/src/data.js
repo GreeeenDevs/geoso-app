@@ -1,0 +1,1 @@
+export const HeaderLogo = require('./Assets/Header/logo.png');

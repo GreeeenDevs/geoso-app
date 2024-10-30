@@ -95,6 +95,7 @@
   color: black; /* Cor preta por padrão */
   text-decoration: none;
   transition: color 0.3s ease; /* Transição suave entre as cores */
+  
 }
 
 .navLink:hover {
