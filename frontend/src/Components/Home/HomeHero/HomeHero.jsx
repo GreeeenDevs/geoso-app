@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './HomeHero.module.css';
 import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 

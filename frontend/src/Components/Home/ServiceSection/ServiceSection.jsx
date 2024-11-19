@@ -1,4 +1,3 @@
-import React from 'react';
 import ServiceCard from '../ServiceCard/ServiceCard';
 import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 import styles from './ServicesSection.module.css';

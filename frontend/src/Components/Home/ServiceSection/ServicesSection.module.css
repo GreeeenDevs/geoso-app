@@ -1,7 +1,7 @@
 .servicesSection {
     background-color: #fff;
     display: flex;
-    margin-top: -8px;
+    margin-top: -58px;
     flex-direction: column;
     overflow: hidden;
     align-items: center;
@@ -43,10 +43,11 @@
     cursor: pointer;
   }
   
-  @media (max-width: 991px) {
+  @media screen and (max-width: 610px) {
     .servicesSection {
       max-width: 100%;
       margin-right: 4px;
+      margin-top: -300px;
       padding: 100px 20px;
     }
   

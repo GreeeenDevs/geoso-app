@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from './Header.module.css';
 import NavLink from '../NavLink/NavLink';
 import Button from '../Button/Button';
@@ -30,8 +29,14 @@ function Header() {
         ))}
       </nav>
       <div className={styles.buttonGroup}>
-        <a href="/login"><Button variant="outlined" text="Área do Cliente"/></a>
-        <Button variant="filled" text="Entre em contato" />
+        <a href="/login">
+          <Button variant="outlined" text="Área do Cliente"/>
+        </a>
+        <Button variant="filled" text="Entrar em Contato" />
+      </div>
+      <div className={styles.menuMob}>
+        <div className={styles.menuLine1}></div>
+        <div className={styles.menuLine2}></div>
       </div>
     </header>
   );

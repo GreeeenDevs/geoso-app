@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 import styles from './ServicesHero.module.css';
 

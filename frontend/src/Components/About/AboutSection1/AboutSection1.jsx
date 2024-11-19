@@ -1,4 +1,3 @@
-import React from "react";
 import styles from './AboutSection1.module.css';
 import { useTheme } from '../../Acessibility/AltoContraste/ThemeContext';
 
