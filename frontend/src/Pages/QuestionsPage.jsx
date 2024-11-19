@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Hero from '../Components/FAQ/FAQHero/FAQHero';
 import FAQList from '../Components/FAQ/FAQList/FAQList';

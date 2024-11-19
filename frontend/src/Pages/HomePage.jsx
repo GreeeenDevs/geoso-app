@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React from 'react';
 import Hero from '../Components/Home/HomeHero/HomeHero';
 import ServiceSection from '../Components/Home/ServiceSection/ServiceSection';

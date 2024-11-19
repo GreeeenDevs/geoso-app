@@ -1,3 +1,5 @@
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
 import * as React from "react";
 import { LoginForm } from "../Components/Login/LoginForm";
 import AltoContraste from "../Components/Acessibility/AltoContraste/AltoContraste";
