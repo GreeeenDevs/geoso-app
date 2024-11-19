@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import * as React from "react";
 import RegistrationForm from "../Components/Registro/RegistrationForm";
 import AltoContraste from "../Components/Acessibility/AltoContraste/AltoContraste";
