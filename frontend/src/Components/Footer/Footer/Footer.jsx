@@ -23,12 +23,12 @@ const Footer = () => {
       <div className={styles.copyright}>
         © 2024 Geo-SO. Todos os direitos reservados.
         <br />
-        Desenvolvido por
+        Desenvolvido por GReeeeN Devs
       </div>
       <div className={styles.contactWrapper}>
         <ContactItem
           iconSrc="https://cdn.builder.io/api/v1/image/assets/TEMP/cf87ba0ccc05b8c0098751f1a1e20643700afeafed8ab63ccadd9c0c3a7bc8b6?placeholderIfAbsent=true&apiKey=d7514896dbad40828bdeb0585d8c7a9d"
-          text="(11) 000-000-000"
+          text="(11) 95211-9988"
         />
         <div className={styles.socialIcons}>
           {socialIcons.map((icon, index) => (

@@ -47,7 +47,6 @@ function Header() {
   };
 
 
-
   return (
     <header style={sectionStyle} className={styles.header}>
       <div className={styles.headerDesktop}>

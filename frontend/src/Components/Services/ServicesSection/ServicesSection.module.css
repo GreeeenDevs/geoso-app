@@ -41,6 +41,7 @@
 }
 
 @media screen and (max-width: 780px) {
+
   .title {
     margin-top: -80px;
   }
@@ -64,5 +65,11 @@
   .container {
     max-width: 100%;
     margin-top: 40px;
+  
+  .serviceList {
+    /* color: #232323; */
+    align-self: stretch;
+    margin: auto 0;
+    font: 500 16px/33px Inter, -apple-system, Roboto, Helvetica, sans-serif;
   }
 }
