@@ -1,4 +1,4 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import styles from '../Header/Header.module.css';
 
 function NavLink({ text, href, isActive }) {

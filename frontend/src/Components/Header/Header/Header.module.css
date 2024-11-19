@@ -1,4 +1,4 @@
-.header {
+.headerDesktop {
   background-color: #fff;
   display: flex;
   justify-content: space-between;
@@ -66,10 +66,10 @@
 }
 
 .filledButton {
-  align-self: start;
   display: flex;
   flex-direction: column;
   color: #fff;
+  justify-content: center;
   background-color: #00d084;
 }
 
@@ -97,27 +97,8 @@
   color: #89ffbe; /* Mantém a cor turquesa da sua classe ativa */
 }
 
-.menuMob {
-}
-
-.menuLine1 {  
-}
-
-.menuLine2 {
-}
-
 @media screen and (max-width: 1312px) {
-  .header {
-    max-width: 100%;
-    padding: 0 20px;
-  }
-
-  .navLinks, .buttonGroup {
-    max-width: 100%;
+  .headerDesktop {
     display: none;
-  }
-
-  .logo {
-    padding: 15px 0px;
   }
 }
