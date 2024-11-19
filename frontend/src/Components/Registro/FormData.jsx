@@ -1,7 +1,3 @@
-// formData.jsx
-
-import React from "react";
-
 export const formFields = [
   {
     id: "firstName",

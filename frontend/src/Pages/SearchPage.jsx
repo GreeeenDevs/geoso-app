@@ -1,3 +1,6 @@
+import SearchSection from '../Components/Search/SearchSection';
+import AltoContraste from '../Components/Acessibility/AltoContraste/AltoContraste';
+// import DarkMode from '../Components/Acessibility/DarkMode/Darkmode';
 import React, { useCallback, useState } from "react";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
@@ -52,6 +55,12 @@ function SearchPage() {
   };
 
   return (
+    <div className="flex flex-col">
+      <main>
+        <SearchSection />
+        <AltoContraste />
+        {/* <DarkMode /> */}
+      </main>
     <div>
       <h1>Localização</h1>
       <div style={{ marginBottom: "10px" }}>

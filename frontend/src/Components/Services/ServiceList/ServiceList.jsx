@@ -1,4 +1,3 @@
-import React from 'react';
 import styles from '../ServicesSection/ServicesSection.module.css';
 
 const ServiceList = ({ services }) => (

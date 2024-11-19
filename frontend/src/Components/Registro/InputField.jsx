@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+import styles from './InputField.module.css';
 import * as React from "react";
 import { useTheme } from '../Acessibility/AltoContraste/ThemeContext';
 
@@ -19,16 +21,18 @@ function InputField({ label, type, id }) {
   `;
 
   return (
-    <div className="input-wrapper">
-      <label htmlFor={id} className="visually-hidden">{label}</label>
+    <div className={styles.inputWrapper}>
+      <label htmlFor={id} className={styles.visuallyHidden}>{label}</label>
       <input
         type={type}
         id={id}
-        className="input-field"
+        className={styles.inputField}
+
         style={inputStyle}
         placeholder={label}
         aria-label={label}
       />
+
 
       <style jsx>{`
         .input-wrapper {

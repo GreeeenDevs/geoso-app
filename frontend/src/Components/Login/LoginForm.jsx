@@ -1,3 +1,4 @@
+import styles from './LoginForm.module.css';
 import * as React from "react";
 import { useTheme } from '../Acessibility/AltoContraste/ThemeContext';
 
@@ -18,39 +19,37 @@ export function LoginForm() {
     transition: 'background-color 0.5s ease, color 0.5s ease',
   };
 
-  // Estilo para o placeholder
-  const placeholderStyle = `
-    ::placeholder {
-      color: ${highContrast ? 'lightgray' : 'gray'};
-    }
-  `;
-
   return (
     <>
-      <main style={sectionStyle} className="login-section">
-        <form style={sectionStyle} className="login-form">
-          <h1 className="form-title">Acesse sua conta</h1>
+      <main style={sectionStyle} className={styles.loginSection}>
+        <form style={sectionStyle} className={styles.loginForm}>
+          <h1 className={styles.formTitle}>Acesse sua conta</h1>
           
-          <div className="form-group">
-            <label htmlFor="email" className="visually-hidden">Email</label>
-            <input type="email" id="email" style={inputStyle} className="form-input" placeholder="Email" required />
+          <div className={styles.formGroup}>
+            <label htmlFor="email" className={styles.visuallyHidden}>Email</label>
+            <input type="email" id="email" style={inputStyle} className={styles.formInput} placeholder="Email" required />
           </div>
           
-          <div className="form-group">
-            <label htmlFor="password" className="visually-hidden">Senha</label>
-            <input type="password" id="password" style={inputStyle} className="form-input" placeholder="Senha" required />
+          <div className={styles.formGroup}>
+            <label htmlFor="password" className={styles.visuallyHidden}>Senha</label>
+            <input type="password" id="password" style={inputStyle} className={styles.formInput} placeholder="Senha" required />
+
           </div>
           
-          <button type="submit" className="submit-btn">Entrar</button>
+          <button type="submit" className={styles.submitBtn}>Entrar</button>
           
-          <a href="#recover" className="recover-link">Recuperar senha</a>
+          <a href="#recover" className={styles.recoverLink}>Recuperar senha</a>
           
-          <div className="signup-prompt">
+          <div className={styles.signupPrompt}>
             <span>Ainda não é cadastrado?</span>
+            <a href="/registro">Clique aqui!</a>
+          </div>
+          <div className={styles.signupPromptEx}>
             <a href="/registro">Clique aqui!</a>
           </div>
         </form>
       </main>
+
       <style jsx>{`
         .login-section {
           background-color: #fff;

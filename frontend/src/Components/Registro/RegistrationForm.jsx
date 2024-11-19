@@ -1,4 +1,4 @@
-import * as React from "react";
+import styles from './RegistrationForm.module.css';
 import InputField from "./InputField";
 import { formFields } from "./FormData";
 import { useTheme } from '../Acessibility/AltoContraste/ThemeContext';
@@ -14,11 +14,12 @@ function RegistrationForm() {
   };
 
   return (
-    <form style={sectionStyle} className="registration-container">
-      <section style={sectionStyle} className="registration-form">
-        <h1 className="form-title">Informe seus dados</h1>
+    <form style={sectionStyle} className={styles.registrationContainer}>
+      <section style={sectionStyle} className={styles.registrationForm}>
+        <h1 className={styles.formTitle}>Informe seus dados</h1>
+
         
-        <div className="name-fields">
+        <div className={styles.nameFields}>
           {formFields.slice(0, 2).map((field) => (
             <InputField
               key={field.id}
@@ -38,7 +39,7 @@ function RegistrationForm() {
           />
         ))}
 
-        <button type="submit" className="register-button">
+        <button type="submit" className={styles.registerButton}>
           Registrar
         </button>
       </section>
